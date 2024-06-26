@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FoodSafetyContens"
+    android:background="@color/red">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|top"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/shrikhan"
+                    android:text="Nutrion\nGuidance"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="26sp" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:layout_marginStart="10dp"
+                    android:fontFamily="@font/shrikhan"
+                    android:text="Food Safety"
+                    android:textColor="@color/white"
+                    android:textSize="20sp" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:layout_marginStart="15dp"
+                    android:fontFamily="@font/glacial"
+                    android:text="Here are some tips for safe food handling:"
+                    android:textColor="@color/white"
+                    android:textSize="13sp" />
+
+                <LinearLayout
+                    android:layout_width="320dp"
+                    android:layout_height="70dp"
+                    android:layout_marginStart="50dp"
+                    android:layout_marginTop="30dp"
+                    android:background="@drawable/linearround">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="85dp"
+                        android:layout_marginEnd="20dp"
+                        android:fontFamily="@font/glacial"
+                        android:text="Wash your hands before preparing food and eating."
+                        android:textColor="@color/white"
+                        android:textSize="13sp" />
+                </LinearLayout>
+                <ImageView
+                    android:layout_width="90dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/fs1"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginTop="-85dp"/>
+
+                <LinearLayout
+                    android:layout_width="320dp"
+                    android:layout_height="70dp"
+                    android:layout_marginStart="50dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/linearround">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="85dp"
+                        android:layout_marginEnd="20dp"
+                        android:fontFamily="@font/glacial"
+                        android:text="Wash fresh produce thoroughly before eating."
+                        android:textColor="@color/white"
+                        android:textSize="13sp" />
+                </LinearLayout>
+                <ImageView
+                    android:layout_width="90dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/fs2"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginTop="-85dp"/>
+                <LinearLayout
+                    android:layout_width="320dp"
+                    android:layout_height="70dp"
+                    android:layout_marginStart="50dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/linearround">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="85dp"
+                        android:layout_marginEnd="20dp"
+                        android:fontFamily="@font/glacial"
+                        android:text="@string/fs3"
+                        android:textColor="@color/white"
+                        android:textSize="13sp" />
+                </LinearLayout>
+                <ImageView
+                    android:layout_width="90dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/fs3"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginTop="-85dp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginStart="15dp"
+                    android:fontFamily="@font/glacial"
+                    android:text="Avoid the following:"
+                    android:textColor="@color/white"
+                    android:textSize="13sp" />
+                <LinearLayout
+                    android:layout_width="320dp"
+                    android:layout_height="70dp"
+                    android:layout_marginStart="50dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/linearround">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="85dp"
+                        android:layout_marginEnd="20dp"
+                        android:fontFamily="@font/glacial"
+                        android:text="Raw fish, especially shellfish and sushi"
+                        android:textColor="@color/white"
+                        android:textSize="13sp" />
+                </LinearLayout>
+                <ImageView
+                    android:layout_width="90dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/fs4"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginTop="-85dp"/>
+                <LinearLayout
+                    android:layout_width="320dp"
+                    android:layout_height="70dp"
+                    android:layout_marginStart="50dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/linearround">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="85dp"
+                        android:layout_marginEnd="20dp"
+                        android:fontFamily="@font/glacial"
+                        android:text="@string/fs5"
+                        android:textColor="@color/white"
+                        android:textSize="12sp" />
+                </LinearLayout>
+                <ImageView
+                    android:layout_width="90dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/fs5"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginTop="-85dp"/>
+                <LinearLayout
+                    android:layout_width="320dp"
+                    android:layout_height="70dp"
+                    android:layout_marginStart="50dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/linearround">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="85dp"
+                        android:layout_marginEnd="20dp"
+                        android:fontFamily="@font/glacial"
+                        android:text="Raw Sprouts"
+                        android:textColor="@color/white"
+                        android:textSize="12sp" />
+                </LinearLayout>
+                <ImageView
+                    android:layout_width="90dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/fs6"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginTop="-85dp"/>
+                <LinearLayout
+                    android:layout_width="320dp"
+                    android:layout_height="70dp"
+                    android:layout_marginStart="50dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/linearround">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="85dp"
+                        android:layout_marginEnd="20dp"
+                        android:fontFamily="@font/glacial"
+                        android:text="@string/fs7"
+                        android:textColor="@color/white"
+                        android:textSize="12sp" />
+                </LinearLayout>
+                <ImageView
+                    android:layout_width="90dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/fs7"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginTop="-85dp"/>
+            </LinearLayout>
+    </ScrollView>
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:layout_gravity="bottom"/>
+</FrameLayout>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/red"
+    tools:context=".OverviewCalendar">
+
+   <LinearLayout
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_gravity="center_horizontal"
+       android:layout_marginTop="20dp"
+       android:orientation="vertical">
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_gravity="center"
+          android:letterSpacing=".3"
+          android:text="SAFENEST"
+          android:textColor="@color/white"
+          android:textSize="28sp"
+          android:textStyle="bold" />
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_gravity="center"
+          android:layout_marginBottom="50dp"
+          android:letterSpacing=".2"
+          android:singleLine="true"
+          android:text="@string/label"
+          android:textAlignment="center"
+          android:textColor="@color/white"
+          android:textSize="12sp" />
+   </LinearLayout>
+   <TextView
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_gravity="center_horizontal"
+       android:layout_marginTop="120dp"
+       android:letterSpacing=".2"
+       android:text="CALENDAR"
+       android:fontFamily="@font/lovelo"
+       android:textColor="@color/white"
+       android:textSize="28sp"
+       android:textStyle="bold" />
+   <CalendarView
+       android:layout_gravity="center"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:minDate="2024"
+       android:layout_marginBottom="30dp"/>
+
+</FrameLayout>

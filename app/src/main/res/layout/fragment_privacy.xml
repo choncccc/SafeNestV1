@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/red"
+    android:layout_height="match_parent"
+    tools:context=".Privacy">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:fontFamily="@font/glacial"
+                android:text="@string/privacy_policy_purpose"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:paddingBottom="8dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingStart="15dp"
+                android:textColor="@color/white"
+                android:fontFamily="@font/glacial"
+                android:text="@string/privacy_policy_intro"
+                android:paddingBottom="8dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:textColor="@color/white"
+                android:fontFamily="@font/glacial"
+                android:paddingStart="15dp"
+                android:layout_height="wrap_content"
+                android:text="@string/privacy_policy_personal_data_definition"
+                android:paddingBottom="8dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:textColor="@color/white"
+                android:fontFamily="@font/glacial"
+                android:paddingStart="15dp"
+                android:layout_height="wrap_content"
+                android:text="@string/privacy_policy_agreement"
+                android:paddingBottom="8dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:textColor="@color/white"
+                android:fontFamily="@font/glacial"
+                android:paddingStart="15dp"
+                android:layout_height="wrap_content"
+                android:text="@string/privacy_policy_contact_email"
+                android:paddingBottom="16dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:textColor="@color/white"
+                android:fontFamily="@font/glacial"
+                android:layout_height="wrap_content"
+                android:text="@string/privacy_policy_personal_info_collection"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:paddingBottom="8dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:textColor="@color/white"
+                android:fontFamily="@font/glacial"
+                android:layout_height="wrap_content"
+                android:paddingStart="15dp"
+                android:text="@string/personal"
+                android:paddingBottom="16dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:fontFamily="@font/glacial"
+                android:text="@string/privacy_policy_list_collected_personal_data"
+                android:textStyle="bold"
+                android:paddingBottom="8dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:textColor="@color/white"
+                android:fontFamily="@font/glacial"
+                android:layout_height="wrap_content"
+                android:paddingStart="15dp"
+                android:text="@string/privacy_policy_personal_info_body"
+                android:paddingBottom="8dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:paddingStart="15dp"
+                android:fontFamily="@font/glacial"
+                android:text="@string/privacy_policy_other_info"
+                android:paddingBottom="16dp"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</FrameLayout>

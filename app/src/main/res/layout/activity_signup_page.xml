@@ -1,0 +1,206 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    android:background="@color/red"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp">
+        <ImageView
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:src="@drawable/logo"
+            android:layout_gravity="center"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SAFENEST"
+            android:letterSpacing=".4"
+            android:fontFamily="@font/lovelo"
+            android:textSize="31sp"
+            android:textColor="@color/white"
+            android:layout_gravity="center"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/label"
+            android:fontFamily="@font/lovelo"
+            android:letterSpacing=".3"
+            android:textSize="10sp"
+            android:textAlignment="center"
+            android:singleLine="true"
+            android:textColor="@color/white"
+            android:layout_gravity="center"
+            />
+    </LinearLayout>
+<ScrollView
+    android:layout_width="wrap_content"
+    android:layout_height="800dp"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="200dp"
+    android:scrollbars="none">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="10dp"
+            android:fontFamily="@font/lovelo"
+            android:text="SIGN UP"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="3dp"
+            android:text="First Name"
+            android:textColor="@color/fffff" />
+
+        <EditText
+            android:id="@+id/Fname"
+            android:layout_width="280dp"
+            android:layout_height="40dp"
+            android:background="@drawable/edit_round"
+            android:paddingStart="12dp"
+            android:textColor="@color/black" />
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="10dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="3dp"
+            android:text="Last Name"
+            android:textColor="@color/fffff" />
+
+        <EditText
+            android:id="@+id/Lname"
+            android:layout_width="280dp"
+            android:layout_height="40dp"
+            android:background="@drawable/edit_round"
+            android:paddingStart="12dp"
+            android:textColor="@color/black" />
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="10dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="3dp"
+            android:text="Username"
+            android:textColor="@color/fffff" />
+
+        <EditText
+            android:id="@+id/userName"
+            android:layout_width="280dp"
+            android:layout_height="40dp"
+            android:background="@drawable/edit_round"
+            android:paddingStart="12dp"
+            android:textColor="@color/black" />
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="10dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="3dp"
+            android:text="Password"
+            android:textColor="@color/fffff" />
+
+        <EditText
+            android:id="@+id/UserPassword"
+            android:layout_width="280dp"
+            android:layout_height="40dp"
+            android:background="@drawable/edit_round"
+            android:inputType="textPassword"
+            android:paddingStart="12dp"
+            android:textColor="@color/black" />
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="10dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="3dp"
+            android:text="Phone Number"
+            android:textColor="@color/fffff" />
+
+        <EditText
+            android:id="@+id/phoneNum"
+            android:layout_width="280dp"
+            android:layout_height="40dp"
+            android:background="@drawable/edit_round"
+            android:inputType="phone"
+            android:paddingStart="12dp"
+            android:textColor="@color/black" />
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="10dp" />
+
+        <TextView
+            android:layout_width="100dp"
+            android:textAlignment="center"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="or"
+            android:textColor="@color/white"
+            android:textStyle="italic" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="3dp"
+            android:text="Email Address"
+            android:textColor="@color/fffff" />
+
+        <EditText
+            android:id="@+id/emailAdd"
+            android:layout_width="280dp"
+            android:layout_height="40dp"
+            android:background="@drawable/edit_round"
+            android:paddingStart="12dp"
+            android:textColor="@color/black" />
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="30dp" />
+
+        <Button
+            android:id="@+id/commitSignUp"
+            android:layout_width="130dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:backgroundTint="@color/fc"
+            android:text="SIGN UP"
+            android:textColor="@color/red"
+            android:textStyle="bold" />
+    </LinearLayout>
+</ScrollView>
+
+</RelativeLayout>

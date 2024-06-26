@@ -1,0 +1,576 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/red"
+    tools:context=".Overview">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="360dp"
+                android:layout_height="200dp"
+                android:layout_marginTop="10dp"
+                app:cardBackgroundColor="@color/df"
+                app:cardCornerRadius="24dp">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:layout_gravity="center|left">
+
+                    <ImageView
+                        android:layout_width="160dp"
+                        android:layout_height="160dp"
+                        android:src="@drawable/logonobg"/>
+                    <TextView
+                        android:id="@+id/OverviewName"
+                        android:layout_width="match_parent"
+                        android:textAlignment="center"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/white"
+                        android:text="NAME"
+                        android:textStyle="bold|italic"
+                        android:textSize="18sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="190dp"
+                    android:layout_height="60dp"
+                    android:orientation="vertical"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginTop="25dp"
+                    android:layout_gravity="center|end|top">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:layout_marginEnd="5dp"
+                        android:layout_marginBottom="90dp"
+                        app:cardBackgroundColor="@color/red"
+                        app:cardCornerRadius="24dp">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginBottom="10dp">
+                            <TextView
+                                android:id="@+id/OverviewDay"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="25dp"
+                                android:textColor="@color/white"
+                                android:text="[ ]"
+                                android:textStyle="bold" />
+                            <TextView
+                                android:id="@+id/OverviewWeek"
+                                android:layout_width="wrap_content"
+                                android:layout_marginStart="45dp"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/white"
+                                android:text="[ ]"
+                                android:textStyle="bold" />
+                            <TextView
+                                android:id="@+id/OverviewMonth"
+                                android:layout_width="wrap_content"
+                                android:layout_marginStart="50dp"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/white"
+                                android:text="[ ]"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:layout_gravity="center">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/white"
+                                android:textSize="12sp"
+                                android:fontFamily="@font/glacial"
+                                android:text="Day" />
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="33dp"
+                                android:textSize="12sp"
+                                android:fontFamily="@font/glacial"
+                                android:textColor="@color/white"
+                                android:text= "Week"
+                                />
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/white"
+                                android:textSize="12sp"
+                                android:fontFamily="@font/glacial"
+                                android:layout_marginStart="29dp"
+                                android:text="Month" />
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="60dp"
+                    android:orientation="vertical"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_gravity="center|end">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/white"
+                            android:textSize="12sp"
+                            android:fontFamily="@font/glacial"
+                            android:text="My term"/>
+                        <TextView
+                            android:id="@+id/OverviewWeek_Day"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/white"
+                            android:layout_marginStart="35dp"
+                            android:fontFamily="@font/glacial"
+                            android:textSize="12sp"
+                            android:text="[] weeks and [] day"/>
+                    </LinearLayout>
+                    <ProgressBar
+                        android:id="@+id/progressBar"
+                        style="?android:attr/progressBarStyleHorizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="14dp"
+                        android:layout_gravity="center"
+                        android:progress="20"
+                        android:progressBackgroundTint="@color/white"
+                        android:progressTint="@color/red"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/white"
+                            android:textSize="12sp"
+                            android:fontFamily="@font/glacial"
+                            android:text="Baby age"/>
+                        <TextView
+                            android:id="@+id/OverviewBabyAgeWeek_Day"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/white"
+                            android:layout_marginStart="27dp"
+                            android:fontFamily="@font/glacial"
+                            android:textSize="12sp"
+                            android:text="[] weeks and [] day"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <GridLayout
+                android:layout_width="360dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/overviewgrid"
+                android:columnCount="2"
+                android:rowCount="4">
+                <LinearLayout
+                    android:layout_marginTop="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_row="0"
+                    android:layout_column="0">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_gravity="center|start"
+                        android:layout_height="50dp">
+                        <ImageView
+                            android:layout_width="40dp"
+                            android:layout_height="35dp"
+                            android:layout_gravity="center"
+                            android:layout_marginStart="10dp"
+                            android:src="@drawable/calendar"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="10dp"
+                            android:layout_gravity="center"
+                            android:text="Due Date"
+                            android:fontFamily="@font/glacial"
+                            android:textSize="16sp"
+                            android:textColor="@color/white" />
+                        <TextView
+                            android:id="@+id/OverviewDueDate"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginStart="95dp"
+                            android:fontFamily="@font/glacial"
+                            android:text="September 11 2001"
+                            android:textColor="@color/white"
+                            android:textSize="16sp" />
+                    </LinearLayout>
+                    <View
+                        android:layout_width="360dp"
+                        android:background="@color/peach"
+                        android:layout_height="2dp"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginBottom="5dp"
+                    android:layout_row="1"
+                    android:layout_column="0">
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp">
+                        <ImageView
+                            android:layout_width="40dp"
+                            android:layout_height="30dp"
+                            android:scaleType="centerCrop"
+                            android:layout_gravity="center"
+                            android:layout_marginStart="10dp"
+                            android:src="@drawable/baseline_calculate_24"/>
+                        <TextView
+                            android:id="@+id/OverviewDueDateCalcu"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="Due Date calculator"
+                            android:layout_marginStart="10dp"
+                            android:fontFamily="@font/glacial"
+                            android:textSize="16sp"
+                            android:textColor="@color/white"/>
+                    </LinearLayout>
+                    <View
+                        android:layout_width="360dp"
+                        android:background="@color/peach"
+                        android:layout_height="2dp"/>
+
+
+
+                    <LinearLayout
+                        android:id="@+id/OverviewBMI"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_row="3"
+                        android:layout_column="0">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="50dp">
+                            <ImageView
+                                android:layout_width="40dp"
+                                android:layout_height="30dp"
+                                android:scaleType="centerCrop"
+                                android:layout_gravity="center"
+                                android:layout_marginStart="10dp"
+                                android:src="@drawable/baseline_monitor_weight_24"/>
+                            <TextView
+
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:text="BMI calculator"
+                                android:layout_marginStart="10dp"
+                                android:fontFamily="@font/glacial"
+                                android:textSize="16sp"
+                                android:textColor="@color/white"/>
+                        </LinearLayout>
+                        <View
+                            android:layout_width="360dp"
+                            android:background="@color/peach"
+                            android:layout_height="2dp"/>
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:id="@+id/OverviewCalendar"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_row="4"
+                        android:layout_column="0">
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="50dp">
+                            <ImageView
+                                android:layout_width="40dp"
+                                android:layout_height="35dp"
+                                android:layout_gravity="center"
+                                android:layout_marginStart="10dp"
+                                android:src="@drawable/calendar"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:text="Calendar"
+                                android:layout_marginStart="10dp"
+                                android:fontFamily="@font/glacial"
+                                android:textSize="16sp"
+                                android:textColor="@color/white"/>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                </LinearLayout>
+            </GridLayout>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="360dp"
+                android:layout_height="280dp"
+                app:cardBackgroundColor="@color/a4"
+                app:cardCornerRadius="24dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center|top|start"
+                    android:layout_marginTop="10dp"
+                    android:text="Pregnancy milestone tracker"
+                    android:layout_marginStart="20dp"
+                    android:fontFamily="@font/glacial"
+                    android:textSize="16sp"
+                    android:textColor="@color/white"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="85dp"
+                    android:text="Congratulations!"
+                    android:fontFamily="@font/satis"
+                    android:textSize="22sp"
+                    android:textColor="@color/white"/>
+                <TextView
+                    android:id="@+id/OverviewWeekBelow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="1"
+                    android:fontFamily="@font/lovelo"
+                    android:textSize="100sp"
+                    android:textColor="@color/white"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center|bottom"
+                    android:layout_marginBottom="60dp"
+                    android:text="weeks"
+                    android:fontFamily="@font/glacial"
+                    android:textSize="20sp"
+                    android:textColor="@color/white"/>
+
+                <ImageView
+                    android:layout_width="190dp"
+                    android:layout_height="190dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_gravity="center|start"
+                    android:layout_marginStart="-45dp"
+                    android:src="@drawable/party" />
+                <ImageView
+                    android:layout_width="190dp"
+                    android:layout_height="190dp"
+                    android:layout_marginTop="20dp"
+                    android:rotationY="180"
+                    android:layout_marginEnd="-45dp"
+                    android:layout_gravity="center|end"
+                    android:src="@drawable/party" />
+            </androidx.cardview.widget.CardView>
+
+            <GridLayout
+                android:layout_width="360dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/overviewgrid"
+                android:columnCount="2"
+                android:rowCount="5">
+                <LinearLayout
+                    android:layout_marginTop="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_row="0"
+                    android:layout_column="0">
+                    <LinearLayout
+                        android:id="@+id/OverviewOther"
+                        android:layout_width="match_parent"
+                        android:layout_gravity="center|start"
+                        android:layout_height="50dp">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="10dp"
+                            android:layout_gravity="center"
+                            android:text="Other"
+                            android:fontFamily="@font/glacial"
+                            android:textSize="16sp"
+                            android:textColor="@color/white" />
+                    </LinearLayout>
+                    <View
+                        android:layout_width="360dp"
+                        android:background="@color/peach"
+                        android:layout_height="2dp"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginBottom="5dp"
+                    android:layout_row="1"
+                    android:layout_column="0">
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp">
+                        <ImageView
+                            android:layout_width="40dp"
+                            android:layout_height="30dp"
+                            android:layout_gravity="center"
+                            android:layout_marginStart="10dp"
+                            android:src="@drawable/whitelang"/>
+                        <TextView
+                            android:id="@+id/OverviewLanguage"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="Language"
+                            android:layout_marginStart="10dp"
+                            android:fontFamily="@font/glacial"
+                            android:textSize="16sp"
+                            android:textColor="@color/white"/>
+                    </LinearLayout>
+                    <View
+                        android:layout_width="360dp"
+                        android:background="@color/peach"
+                        android:layout_height="2dp"/>
+
+                    <LinearLayout
+                        android:id="@+id/OverviewFeedback"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_row="3"
+                        android:layout_column="0">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="50dp">
+                            <ImageView
+                                android:layout_width="40dp"
+                                android:layout_height="30dp"
+                                android:scaleType="centerCrop"
+                                android:layout_gravity="center"
+                                android:layout_marginStart="10dp"
+                                android:src="@drawable/baseline_email_24"/>
+                            <TextView
+
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:text="Feedback"
+                                android:layout_marginStart="10dp"
+                                android:fontFamily="@font/glacial"
+                                android:textSize="16sp"
+                                android:textColor="@color/white"/>
+                        </LinearLayout>
+                        <View
+                            android:layout_width="360dp"
+                            android:background="@color/peach"
+                            android:layout_height="2dp"/>
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:id="@+id/OverviewInfo"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_row="4"
+                        android:layout_column="0">
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="50dp">
+                            <ImageView
+                                android:layout_width="40dp"
+                                android:layout_height="35dp"
+                                android:layout_gravity="center"
+                                android:layout_marginStart="10dp"
+                                android:src="@drawable/baseline_info_24"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:text="Information"
+                                android:layout_marginStart="10dp"
+                                android:fontFamily="@font/glacial"
+                                android:textSize="16sp"
+                                android:textColor="@color/white"/>
+                        </LinearLayout>
+                    </LinearLayout>
+                    <View
+                        android:layout_width="360dp"
+                        android:background="@color/peach"
+                        android:layout_height="2dp"/>
+                    <LinearLayout
+                        android:id="@+id/OverviewAboutApp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_row="4"
+                        android:layout_column="0">
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="50dp">
+                            <ImageView
+                                android:layout_width="40dp"
+                                android:layout_height="35dp"
+                                android:layout_gravity="center"
+                                android:layout_marginStart="10dp"
+                                android:src="@drawable/baseline_child_care_24"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:text="About App"
+                                android:layout_marginStart="10dp"
+                                android:fontFamily="@font/glacial"
+                                android:textSize="16sp"
+                                android:textColor="@color/white"/>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                </LinearLayout>
+            </GridLayout>
+
+            <androidx.legacy.widget.Space
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:layout_gravity="bottom"/>
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</FrameLayout>

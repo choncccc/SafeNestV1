@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/red"
+    tools:context=".fragment_selectLanguage">
+
+    <LinearLayout
+        android:id="@+id/header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center|top"
+        android:layout_marginTop="85dp">
+        <ImageView
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:src="@drawable/logo"
+            android:layout_gravity="center" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SAFENEST"
+            android:letterSpacing=".4"
+            android:fontFamily="@font/lovelo"
+            android:textSize="31sp"
+            android:textColor="@color/white"
+            android:layout_gravity="center"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/label"
+            android:fontFamily="@font/lovelo"
+            android:letterSpacing=".3"
+            android:textSize="10sp"
+            android:textAlignment="center"
+            android:singleLine="true"
+            android:textColor="@color/white"
+            android:layout_gravity="center"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/fffff"
+            android:layout_gravity="center|top"
+            android:layout_margin="30dp"
+            android:text="Select language"
+            android:textSize="14sp"
+            android:fontFamily="@font/glacial"/>
+    </LinearLayout>
+
+        <Button
+            android:id="@+id/btnNext"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="300dp"
+            android:layout_gravity="center"
+            android:textStyle="bold"
+            android:text="Next"
+            android:textColor="@color/red"
+            android:backgroundTint="@color/fc"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:layout_marginBottom="60dp"
+        android:background="@drawable/edit_round">
+        <ImageView
+            android:layout_marginTop="14dp"
+            android:layout_marginStart="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/baseline_language_24"/>
+        <Spinner
+            android:id="@+id/languageSpinner"
+            android:layout_width="300dp"
+            android:layout_height="50dp" />
+    </LinearLayout>
+</FrameLayout>

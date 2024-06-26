@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="red">#DD6064</color>
+    <color name="peach">#FFDDD2</color>
+    <color name="a4">#a43b37</color>
+    <color name="b7">#b74857</color>
+    <color name="df">#df9090</color>
+    <color name="f1">#f1a19c</color>
+    <color name="fc">#fcf8eb</color>
+    <color name="ff">#ff9eaa</color>
+    <color name="ffd">#ffd0d0</color>
+    <color name="fffff">#ffffed</color>
+</resources>

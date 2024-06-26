@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <resources>
+        <string name="privacy_policy_purpose">PURPOSE</string>
+        <string name="privacy_policy_intro">• Our current Privacy Policy has been made to help you understand what information we collect and what operations we perform with this information; and for you to know what rights you have when using the application.
+            \n\n• Our current Privacy Policy (in conjunction with the User Agreement) establishes the regulations and basis on which we process all personal data which we receive from you or which you give us in relation to using our application. The information which you give or which we collect from you is used for the purposes outlined in our Privacy Policy.</string>
+        <string name="privacy_policy_personal_data_definition">• In our Privacy Policy, "Personal Data" means all information related to an identified or identifiable living individual. This personal information may include information which you provide or give, as well as information received from your device as described below.</string>
+        <string name="privacy_policy_agreement">• By using the Service, you agree to our current Policy and the conditions under which we process your personal information as shown in the Policy. In the event you don\'t agree with these conditions, you must refrain from using the application.</string>
+        <string name="privacy_policy_contact_email">• Assuredly, we only act in the best interests of all our users. If you have any questions or suggestions regarding the contents of our Privacy Policy, get in touch by e-mailing us at safenestdigitalcompanion@gmail.com.</string>
+        <string name="privacy_policy_personal_info_collection">WHAT PERSONAL INFORMATION WE COLLECT AND HOW WE USE IT</string>
+        <string name="personal" >• The personal information that we may collect and the
+                measures we use to ensure confidentiality depend on the
+                nature of our relationship with you and the current legal
+                requirements such as providing us with personal information
+                directly by using our application.
+</string>
+        <string name="privacy_policy_list_collected_personal_data">LIST OF PERSONAL DATA COLLECTED</string>
+        <string name="privacy_policy_personal_info_body">• Information which is collected specifically by our Service. We
+may collect the information shown below.
+            \n\n○ Information about you, which you have decided to
+provide. We may collect and use data from when
+functions such as names, languages and regions.
+\n\n○ Personal information about your body. In the app you enter your name, height and weight, start of menstruation date, conception date, and estimated due date. You consent to us having the right to use the contents of any messages you send us solely for the purpose of solving your queries. We commit to not disclose this data and to not make public the fact that you provided us with these materials or other information, with the exception of the following: you give us permission to, or we are obliged to by law.</string>
+        <string name="privacy_policy_other_info">○ Other information. Additionally, we may collect other non-personal, non-identifiable information, not linked directly or indirectly to a specific user.</string>
+        <string name="privacy_policy_use_personal_data">USE OF PERSONAL DATA</string>
+        <string name="privacy_policy_security_prevention">MEANS OF ENSURING SECURITY AND PREVENTATIVE MEASURES</string>
+        <string name="privacy_policy_data_storage">DATA STORAGE POLICY</string>
+    </resources>
+
+
